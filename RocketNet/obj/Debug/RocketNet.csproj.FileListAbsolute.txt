@@ -132,3 +132,9 @@ C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\Microsoft
 C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\obj\Debug\RocketNet.csprojResolveAssemblyReference.cache
 C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\obj\Debug\RocketNet.dll
 C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\obj\Debug\RocketNet.pdb
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Net.Http.Formatting.dll
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Web.Http.dll
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Web.Http.WebHost.dll
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Net.Http.Formatting.xml
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Web.Http.xml
+C:\Users\Brenden\Documents\CODING\School Stuff\RocketNet\RocketNet\bin\System.Web.Http.WebHost.xml

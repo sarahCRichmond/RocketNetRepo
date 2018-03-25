@@ -26,5 +26,19 @@ namespace RocketNet.Controllers
 
             return View();
         }
+
+        public ActionResult Pokemon()
+        {
+            ViewBag.Message = "List of Pokemon";
+
+            return View();
+        }
+
+        public ActionResult Logout()
+        {
+            ViewBag.Message = "Logged out";
+
+            return View();
+        }
     }
 }
