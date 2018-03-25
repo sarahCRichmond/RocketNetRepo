@@ -21,4 +21,5 @@ namespace RocketNet.Models
     {
         public DbSet<Pokemon> Pokes { get; set; }
     }
+
 }
