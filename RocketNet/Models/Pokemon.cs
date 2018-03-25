@@ -14,6 +14,7 @@ namespace RocketNet.Models
         public string Type1 { get; set; }
         public string Type2 { get; set; }
         public decimal Price { get; set; }
+
     }
 
     public class PokeDBContext : DbContext
