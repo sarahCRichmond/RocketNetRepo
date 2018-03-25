@@ -27,7 +27,7 @@ namespace RocketNet.Controllers
             return View();
         }
 
-        public ActionResult Pokemon()
+        public ActionResult Pokes()
         {
             ViewBag.Message = "List of Pokemon";
 
