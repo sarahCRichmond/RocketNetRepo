@@ -10,7 +10,7 @@ namespace RocketNet.Controllers
     {
         // GET: Search
 
-        public ActionResult Index()
+        public ActionResult Search()
         {
             return View();
         }
@@ -21,6 +21,6 @@ namespace RocketNet.Controllers
         {
             return HttpUtility.HtmlEncode("Hello " + name + ", ID:" + ID);
         }
-        
+
     }
 }
