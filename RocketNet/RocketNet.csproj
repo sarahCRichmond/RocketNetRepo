@@ -211,17 +211,14 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-<<<<<<< HEAD
     <Content Include="Views\Pokemon\Create.cshtml" />
     <Content Include="Views\Pokemon\Delete.cshtml" />
     <Content Include="Views\Pokemon\Details.cshtml" />
     <Content Include="Views\Pokemon\Edit.cshtml" />
     <Content Include="Views\Pokemon\Index.cshtml" />
-=======
     <Content Include="Views\Items\List.cshtml" />
     <Content Include="Views\Items\Details.cshtml" />
     <Content Include="Views\Items\Index.cshtml" />
->>>>>>> 55f79cdfb503c4737fb9cadab2c8cf9c612f974e
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
