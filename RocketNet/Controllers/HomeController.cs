@@ -40,5 +40,19 @@ namespace RocketNet.Controllers
 
             return View();
         }
+
+        public ActionResult Account()
+        {
+            ViewBag.Message = "Account page";
+
+            return View();
+        }
+
+        public ActionResult Wishlist()
+        {
+            ViewBag.Message = "Wishlist page";
+
+            return View();
+        }
     }
 }
