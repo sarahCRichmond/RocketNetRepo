@@ -195,16 +195,15 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\001.png" />
-    <Content Include="Content\Images\002.png" />
-    <Content Include="Content\Images\003.png" />
-    <Content Include="Content\Images\004.png" />
-    <Content Include="Content\Images\005.png" />
-    <Content Include="Content\Images\006.png" />
-    <Content Include="Content\Images\007.png" />
-    <Content Include="Content\Images\008.png" />
-    <Content Include="Content\Images\009.png" />
-    <Content Include="Content\Images\123.gif" />
+    <Content Include="Content\Images\1.png" />
+    <Content Include="Content\Images\2.png" />
+    <Content Include="Content\Images\3.png" />
+    <Content Include="Content\Images\4.png" />
+    <Content Include="Content\Images\5.png" />
+    <Content Include="Content\Images\6.png" />
+    <Content Include="Content\Images\7.png" />
+    <Content Include="Content\Images\8.png" />
+    <Content Include="Content\Images\9.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

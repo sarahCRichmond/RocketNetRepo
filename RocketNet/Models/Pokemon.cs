@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
 
 namespace RocketNet.Models
 {
@@ -19,6 +20,8 @@ namespace RocketNet.Models
 
     public class PokeDBContext : DbContext
     {
+        public PokeDBContext() : base("PokeDBContext") { 
+    }
         public DbSet<Pokemon> Pokes { get; set; }
     }
 }
