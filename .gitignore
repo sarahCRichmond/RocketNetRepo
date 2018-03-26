@@ -49,8 +49,11 @@ bld/
 
 #Stuff that git kept screaming about
 */RockNet.dll
-RocketNet.pdb
+*/RocketNet.pdb
 *.[Cc]ache
+*.sdf
+*.csproj
+
 
 
 # NUNIT
