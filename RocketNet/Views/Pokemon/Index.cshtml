@@ -8,6 +8,14 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm("Index", "Pokemon", FormMethod.Get))
+    {
+     <p>
+        Type: @Html.DropDownList("type", "All")
+        <input type="submit" value="Filter" />
+     </p>
+    }
+    
 </p>
 <table class="table">
     <tr>

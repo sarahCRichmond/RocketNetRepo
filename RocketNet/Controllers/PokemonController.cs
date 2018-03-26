@@ -15,9 +15,29 @@ namespace RocketNet.Controllers
         private PokeDBContext db = new PokeDBContext();
 
         // GET: Pokemon
-        public ActionResult Index()
+        public ActionResult Index(string type ,string search)
         {
-            return View(db.Pokes.ToList());
+            var Types = new List<string> {"Bug", "Dark", "Dragon", "Electric", "Fairy", "Fighting", "Fire", "Flying", 
+                "Ghost", "Grass", "Ground", "Ice", "Normal", "Poison", "Psychic", "Rock", "Steel", "Water"};
+
+            ViewBag.type = new SelectList(Types);
+
+
+
+            var pokes= from m in db.Pokes
+                          select m;
+            if (!String.IsNullOrEmpty(search))
+            {
+                pokes = pokes.Where(n => n.Name.Contains(search));
+            }
+
+            if (!String.IsNullOrEmpty(type))
+            {
+                pokes = pokes.Where(x => x.Type1 == type || x.Type2 == type);
+            }
+
+
+            return View(pokes);
         }
 
         // GET: Pokemon/Details/5

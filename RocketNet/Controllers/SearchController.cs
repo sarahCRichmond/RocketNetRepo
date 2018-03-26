@@ -10,7 +10,7 @@ namespace RocketNet.Controllers
     {
         // GET: Search
 
-        public ActionResult Search()
+        public ActionResult Index()
         {
             return View();
         }
