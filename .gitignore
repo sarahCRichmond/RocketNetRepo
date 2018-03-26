@@ -21,6 +21,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.applicationhost.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -45,6 +46,12 @@ bld/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+
+#Stuff that git kept screaming about
+*/RockNet.dll
+RocketNet.pdb
+*.[Cc]ache
+
 
 # NUNIT
 *.VisualState.xml
