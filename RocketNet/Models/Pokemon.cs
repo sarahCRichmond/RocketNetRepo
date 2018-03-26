@@ -20,8 +20,6 @@ namespace RocketNet.Models
 
     public class PokeDBContext : DbContext
     {
-        public PokeDBContext() : base("PokeDBContext") { 
-    }
         public DbSet<Pokemon> Pokes { get; set; }
     }
 }
