@@ -47,14 +47,6 @@ bld/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-#Stuff that git kept screaming about
-*/RockNet.dll
-*/RocketNet.pdb
-*.[Cc]ache
-*.sdf
-*.csproj
-
-
 
 # NUNIT
 *.VisualState.xml
