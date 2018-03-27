@@ -15,11 +15,29 @@ namespace RocketNet.Controllers
         private PokeDBContext db = new PokeDBContext();
 
         // GET: Items
-        public ActionResult Index()
-        {
-            return View(db.Pokes.ToList());
-        }
 
+        public ActionResult List(string type, string search)
+        {
+            var Types = new List<string> {"Bug", "Dark", "Dragon", "Electric", "Fairy", "Fighting", "Fire", "Flying", 
+                "Ghost", "Grass", "Ground", "Ice", "Normal", "Poison", "Psychic", "Rock", "Steel", "Water"};
+
+            ViewBag.type = new SelectList(Types);
+
+            var pokes = from m in db.Pokes
+                        select m;
+            if (!String.IsNullOrEmpty(search))
+            {
+                pokes = pokes.Where(n => n.Name.Contains(search));
+            }
+
+            if (!String.IsNullOrEmpty(type))
+            {
+                pokes = pokes.Where(x => x.Type1 == type || x.Type2 == type);
+            }
+
+
+            return View(pokes);
+        }
         // GET: Items/Details/5
         public ActionResult Details(int? id)
         {
@@ -35,12 +53,10 @@ namespace RocketNet.Controllers
             return View(pokemon);
         }
 
-        public ActionResult List()
+        public ActionResult Purchase(Pokemon pokemon)
         {
-            return View(db.Pokes.ToList());
+            return View(pokemon);
         }
-
-
 
         protected override void Dispose(bool disposing)
         {

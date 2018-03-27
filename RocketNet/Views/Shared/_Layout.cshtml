@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title - Rocket.net</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,7 +19,7 @@
                 @Html.ActionLink("Rocket.net", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
-            <div class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
@@ -31,12 +31,14 @@
                     <li>@Html.ActionLink("Wishlist", "Wishlist", "Home")</li>
 
                 </ul>
+
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Logout", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Cart", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Cart", "Cart", "Home")</li>
                 </ul>
-                <form name="search" class="nav navbar-nav navbar-form navbar-left" nav action="/Pokemon">
-                    <a class="btn btn-info" href="/Search">Adv Search</a>
+
+                <form name="search" class="nav navbar-nav navbar-form navbar-left" nav action="/Items/List">
+
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
                     </div>
@@ -46,7 +48,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="container body-content">
         @RenderBody()
@@ -59,5 +61,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
+    </body>
 </html>

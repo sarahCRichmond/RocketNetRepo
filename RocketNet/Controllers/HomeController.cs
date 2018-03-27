@@ -47,11 +47,34 @@ namespace RocketNet.Controllers
 
             return View();
         }
+        public ActionResult Address()
+        {
+            ViewBag.Message = "Account page";
+
+            return View();
+        }
+        public ActionResult Payment()
+        {
+            ViewBag.Message = "Account page";
+
+            return View();
+        }
 
         public ActionResult Wishlist()
         {
             ViewBag.Message = "Wishlist page";
 
+            return View();
+        }
+
+        public ActionResult Cart()
+        {
+            ViewBag.Message = "Your Cart";
+
+            return View();
+        }
+        public ActionResult Checkout()
+        {
             return View();
         }
     }
